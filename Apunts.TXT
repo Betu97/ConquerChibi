@@ -1,0 +1,35 @@
+Add Component -> Rigidbody: per a afegir gravetat a l'objecte
+Add Component -> NewBehaviourScript: el nom del script ha de tindre el mateix nom que la classe
+
+Ctrl + D: crea una copia d'un objecte
+
+________________________________
+
+Tipus classes: Time, Vector, Transform, Debug (Debug.Log("text"); // Debug.DrawLine).
+
+__________________________________________
+GDD
+
+0. Proposal = portada del GDD (maca) + introducció
+
+1. Introducció. Creadors + info de cada un // High concept + pitch = primeres línies que descriuen en què consisteix el joc
+
+2. Món de joc. Ambientació (època, tipus de món (steampunk, infernal...)... // Conjunt d'elements visuals que embolcallen l'acció amb un estil artístic concret) + Personatges principals (nom, biografia, motivacions, ètica i moral, relació amb el món i amb altres personatges, evolució durant el joc, descripció física, imatges o dibuixos conceptuals) + Enemics/NPC (igual que els personatges principals) + Escenes/nivells (no confondre amb Level Dessign // nom dels escenaris, ¿per què el jugador es troba dins aquest escenari?, descripció física de l'escena, tonalitat emocional d'escena, clima, hora del dia, estació de l'any, NPC que hi ha a l'escena, color general, efectes sonors i música)
+
+3. Mecàniques. 
+
+4. Interacció d'usuari
+
+5. Level Design (recomanable ficar la escaleta aquí)
+
+6. Project Plan
+
+7. Prototip (no cal)
+
+8. Monetització i màrqueting (opcional, si queda temps)
+
+9. Abstract = al final del GDD (opcional)
+
+Biblia d'art = artbook (el artworks conceptuals poden anar al llarg del document, no necessariament agrupats al final).
+
+_______________
