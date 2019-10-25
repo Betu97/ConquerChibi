@@ -16,7 +16,7 @@ GDD
 
 2. Món de joc. Ambientació (època, tipus de món (steampunk, infernal...)... // Conjunt d'elements visuals que embolcallen l'acció amb un estil artístic concret) + Personatges principals (nom, biografia, motivacions, ètica i moral, relació amb el món i amb altres personatges, evolució durant el joc, descripció física, imatges o dibuixos conceptuals) + Enemics/NPC (igual que els personatges principals) + Escenes/nivells (no confondre amb Level Dessign // nom dels escenaris, ¿per què el jugador es troba dins aquest escenari?, descripció física de l'escena, tonalitat emocional d'escena, clima, hora del dia, estació de l'any, NPC que hi ha a l'escena, color general, efectes sonors i música)
 
-3. Mecàniques. 
+3. Gameplay (mecàniques (comportaments interns normalment desconeguts per al jugador // físiques, economia interna, mecàniques de progressió, maniobres de tàctica, interacció social) // metagaming&metagameplay (merchandising, YouTube, comunitat, esdeveniments) // gamefeel (a través de la càmera, sons...) // regles (instruccions bàsiques)) -> (acció -> mecànica (reacció) -> conseqüència) // Acabar amb la regla més important del joc (el seu objectiu)
 
 4. Interacció d'usuari
 
