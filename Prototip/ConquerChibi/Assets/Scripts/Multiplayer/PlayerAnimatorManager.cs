@@ -23,7 +23,7 @@ namespace Com.MyCompany.multiTest
             animator = GetComponent<Animator>();
             if (!animator)
             {
-                Debug.LogError("PlayerAnimatorManager is Missing Animator Component", this);
+                //Debug.LogError("PlayerAnimatorManager is Missing Animator Component", this);
             }
 
         }

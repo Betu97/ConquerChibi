@@ -62,13 +62,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CameraWork.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Launcher.cs" />
-    <Compile Include="Assets\Scripts\PlayerAnimatorManager.cs" />
-    <Compile Include="Assets\Scripts\PlayerManager.cs" />
-    <Compile Include="Assets\Scripts\PlayerNameInputField.cs" />
-    <Compile Include="Assets\Scripts\PlayerUI.cs" />
+    <Compile Include="Assets\Scripts\Multiplayer\CameraWork.cs" />
+    <Compile Include="Assets\Scripts\Multiplayer\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Multiplayer\Launcher.cs" />
+    <Compile Include="Assets\Scripts\Multiplayer\PlayerAnimatorManager.cs" />
+    <Compile Include="Assets\Scripts\Multiplayer\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Multiplayer\PlayerNameInputField.cs" />
+    <Compile Include="Assets\Scripts\Multiplayer\PlayerUI.cs" />
+    <Compile Include="Assets\Scripts\Terrains\Crate.cs" />
+    <Compile Include="Assets\Scripts\Terrains\LeverScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/BetuFolder/uni/5eAny/ProduccioDeVideojocs/ConquerChibi/ConquerChibi/Prototip/ConquerChibi/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
