@@ -29,17 +29,14 @@ public class Crate : MonoBehaviour
 
     public void OnMouseEnter()
     {
-        Debug.Log("Enter");
     }
 
     public void OnMouseExit()
     {
-        Debug.Log("Exit");
     }
 
     public void OnMouseUp()
     {
-        Debug.Log("Up");
         InteractText = "Press F to ";
 
         mIsRotated = !mIsRotated;

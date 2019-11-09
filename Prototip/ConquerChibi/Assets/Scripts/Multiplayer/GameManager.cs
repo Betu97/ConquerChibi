@@ -75,7 +75,6 @@ namespace Com.MyCompany.multiTest
 
         private void OnApplicationQuit()
         {
-            System.Threading.Thread.Sleep(2000);
             LeaveRoom();
         }
 

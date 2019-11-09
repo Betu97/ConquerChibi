@@ -8,6 +8,7 @@ public class LeverScript : MonoBehaviour
     GameObject crate;
     GameObject utext;
     GameObject upanel;
+    bool col = false;
 
     public void Start()
     {
@@ -19,20 +20,33 @@ public class LeverScript : MonoBehaviour
         crate.GetComponent<Crate>().state = Crate.State.hide;
     }
 
-    private void OnTriggerStay(Collider col)
+    private void OnTriggerEnter(Collider other)
     {
-        utext.SetActive(true);
-        upanel.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.E))
+        col = true;
+    }
+
+    public void Update()
+    {
+        if (col == true)
         {
-            Debug.Log("rotated");
-            crate.GetComponent<Animator>().SetBool("rotated", crate.GetComponent<Crate>().mIsRotated);
-            crate.GetComponent<Crate>().mIsRotated = !crate.GetComponent<Crate>().mIsRotated;
+            utext.SetActive(true);
+            upanel.SetActive(true);
+            if (Input.GetButtonDown("MapInteraction"))
+            {
+                rotatePlatform();
+            }
         }
+    }
+
+    private void rotatePlatform()
+    {
+        crate.GetComponent<Crate>().mIsRotated = !crate.GetComponent<Crate>().mIsRotated;
+        crate.GetComponent<Animator>().SetBool("rotated", crate.GetComponent<Crate>().mIsRotated);
     }
 
     private void OnTriggerExit(Collider other)
     {
+        col = false;
         utext.SetActive(false);
         upanel.SetActive(false);
     }
