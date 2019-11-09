@@ -11,11 +11,11 @@ public class LeverScript : MonoBehaviour
 
     public void Start()
     {
-        utext = GameObject.Find("Text");
+        utext = GameObject.Find("Interact");
         utext.SetActive(false);
         upanel = GameObject.Find("Panel");
         upanel.SetActive(false);
-        crate = GameObject.Find("Crate");
+        crate = GameObject.Find("Plataforma");
         crate.GetComponent<Crate>().state = Crate.State.hide;
     }
 
