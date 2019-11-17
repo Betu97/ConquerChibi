@@ -25,6 +25,7 @@ namespace Com.MyCompany.multiTest
             {
                 //Debug.LogError("PlayerAnimatorManager is Missing Animator Component", this);
             }
+            animator.gameObject.AddComponent<PlayerMovement>().animator = animator;
 
         }
 
@@ -42,8 +43,12 @@ namespace Com.MyCompany.multiTest
                 {
                     return;
                 }
+                
+                //MOVIMENT A ELIMINAR --------
+
                 // deal with Jumping
                 AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+                
                 // only allow jumping if we are running.
                 if (stateInfo.IsName("Base Layer.Run"))
                 {
@@ -61,12 +66,18 @@ namespace Com.MyCompany.multiTest
                 }
                 animator.SetFloat("Speed", h * h + v * v);
                 animator.SetFloat("Direction", h, directionDampTime, Time.deltaTime);
+                
+               //MOVIMENT A ELIMINAR --------
             }
             catch
             {
 
             }
             
+        }
+
+        void LateUpdate(){
+
         }
 
 
