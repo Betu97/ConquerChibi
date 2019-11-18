@@ -25,7 +25,7 @@ namespace Com.MyCompany.multiTest
             {
                 //Debug.LogError("PlayerAnimatorManager is Missing Animator Component", this);
             }
-            animator.gameObject.AddComponent<PlayerMovement>().animator = animator;
+            //animator.gameObject.AddComponent<PlayerMovement>().animator = animator;
 
         }
 

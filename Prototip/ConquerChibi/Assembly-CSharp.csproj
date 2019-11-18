@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Multiplayer\Launcher.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\PlayerAnimatorManager.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Multiplayer\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\PlayerNameInputField.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\Terrains\Crate.cs" />

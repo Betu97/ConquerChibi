@@ -25,10 +25,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -112,13 +110,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11654}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 11782}
+      Script: {instanceID: 11784}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -219,17 +217,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11544}
     - Class: 114
-      Script: {instanceID: 11654}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 11774}
+      Script: {instanceID: 11776}
     - Class: 114
-      Script: {instanceID: 11782}
+      Script: {instanceID: 11784}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -322,13 +320,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11654}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 11782}
+      Script: {instanceID: 11784}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1382,6 +1380,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 6a6668757f65ce76a1fb42855992fdc5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
   - hash:
       serializedVersion: 2
       Hash: 2b53d93770b9036b2fd1c7854560bc69
