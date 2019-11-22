@@ -16,6 +16,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.Asteroids.Spaceship
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -842,7 +844,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomPlayerTtlProperty
   - hash:
       serializedVersion: 2
-      Hash: 78cb68caf486650e6a853582e22acd13
+      Hash: 96ad3b8862de9671403e551bd778b890
     assemblyName: Assembly-CSharp.dll
     namespaceName: Com.MyCompany.multiTest
     className: PlayerManager
@@ -1637,4 +1639,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Launcher.unity
   - Assets/Scenes/Lobby.unity
   - Assets/Scenes/AldeaYamikaze.unity
-  playerPath: C:/Users/msigr/Desktop/ConquerChibi/ConquerChibi/Prototip/ConquerChibi/Builded/ConquerChibi.exe
+  playerPath: D:/BetuFolder/uni/5eAny/ProduccioDeVideojocs/ConquerChibi/ConquerChibi/Prototip/ConquerChibi/Builded/ConquerChibi.exe

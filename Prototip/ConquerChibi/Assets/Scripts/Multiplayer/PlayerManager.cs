@@ -158,6 +158,10 @@ namespace Com.MyCompany.multiTest
                     try
                     {
                         uinteract.SetActive(true);
+                        if (Input.GetButtonDown("MapInteraction"))
+                        {
+                            LeverScript.Instance.rotatePlatform();
+                        }
                     }
                     catch
                     {

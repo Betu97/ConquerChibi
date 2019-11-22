@@ -1106,46 +1106,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
---- !u!1 &2116643627 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4547309822021903091, guid: 5d6883903b534d846ae977352cf0b0c8,
-    type: 3}
-  m_PrefabInstance: {fileID: 5492886479842514812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2116643628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116643627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85a3d1ab6dddb04ebd997fa17e9306c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 0
-  InteractText: 
-  mIsRotated: 0
---- !u!95 &2116643629
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116643627}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 35dc744fa56a1c442a206ac9417ef129, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1121556694079948798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3497266196001620310, guid: 6e69c04f0f1c2c94aa08b3e747008e04,
@@ -1389,6 +1349,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma
       objectReference: {fileID: 0}
+    - target: {fileID: 4547309822021903091, guid: 5d6883903b534d846ae977352cf0b0c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlatformAldea
+      objectReference: {fileID: 0}
     - target: {fileID: 666554632789840096, guid: 5d6883903b534d846ae977352cf0b0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1443,6 +1408,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116643631, guid: 5d6883903b534d846ae977352cf0b0c8, type: 3}
+      propertyPath: viewIdField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d6883903b534d846ae977352cf0b0c8, type: 3}
