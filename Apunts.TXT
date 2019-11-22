@@ -18,9 +18,9 @@ GDD
 
 3. Gameplay (mecàniques (comportaments interns normalment desconeguts per al jugador // físiques, economia interna, mecàniques de progressió, maniobres de tàctica, interacció social) // metagaming&metagameplay (merchandising, YouTube, comunitat, esdeveniments) // gamefeel (a través de la càmera, sons...) // regles (instruccions bàsiques)) -> (acció -> mecànica (reacció) -> conseqüència) // Acabar amb la regla més important del joc (el seu objectiu)
 
-4. Interacció d'usuari
+4. Interacció d'usuari / UI (tipus d'UI (diegètiques (integrades en el món del joc, no sobre la càmera), no diegètiques (tota la HUD està enganxada a la càmera), meta interficies (mescla entre les dos, HUD pegada a la càmera, però que interactua amb l'entorn) i interficies espaials (integrada en el joc, però com a elements 3D (p.e., outlines)), wireframes (cóm seràn les pantalles visualment), flowchart (interaccions de menús (draw.io)), button mapping) 
 
-5. Level Design (recomanable ficar la escaleta aquí)
+5. Level Design (construcció del disseny del joc en la seva totalitat // investigar, localitzar, fotografiar, captar la llum // duració nivell, objectiu del nivell, inici i final del nivell, punts de spawn, enemics i/o NPCs, per on es pot caminar, objectes per a agafar, zones secretes o objectes amagats (easter eggs), assets per nivell, altres (limitacions, restriccions, comentaris de dissenyador), estructura, estructura (lineal, bifurcada, >nodal< (el nostre), aniuada) // ficar llegenda i línies d'acció en els esquemes (espais interessants?, divertit?, recompensa?, dificultat?, coherent en la història?, just amb el jugador?)
 
 6. Project Plan
 
@@ -34,7 +34,6 @@ Biblia d'art = artbook (el artworks conceptuals poden anar al llarg del document
 
 _______________
 
-
 Dedicar l'esforç en un únic personatge i un únic nivell
 
 mixamo.com: pàgina amb animacions
@@ -45,3 +44,12 @@ https://www.cgpeers.com/login.php (s'obre el día 1 i el día 15 de cada mes per
 https://catlikecoding.com/unity/tutorials/ = tutorials de Unity
 shadertoy.com = toquetejar shaders
 https://www.youtube.com/watch?v=Ar9eIn4z6XE Shader Graph en Unity
+
+tiny.cc/kj6ogz
+________________
+
+"Culturilla" extra
+
+*Llum: permet emfatitzar un objecte sobre la resta (guía)
+*Vistes: tipus de càmera per a generar sensacions (ensenyar per on s'ha d'anar, magnificació de sentiments, zenital per generar vertígen, indicador del següent pas a seguir/gameplay)
+*"Touch": distribució del level design que aporta informació al jugador sobre els personatges, el lore...
