@@ -6,13 +6,13 @@ public class LeverScript : MonoBehaviour
 {
     
     GameObject crate;
-    GameObject uinteract;
+   // GameObject uinteract;
     bool col = false;
 
     public void Start()
     {
-        uinteract = GameObject.Find("Interaction");
-        uinteract.SetActive(false);
+        //uinteract = GameObject.Find("Interaction");
+        //uinteract.SetActive(false);
         crate = GameObject.Find("Plataforma");
         crate.GetComponent<Crate>().state = Crate.State.hide;
     }
@@ -26,7 +26,7 @@ public class LeverScript : MonoBehaviour
     {
         if (col == true)
         {
-            uinteract.SetActive(true);
+            //uinteract.SetActive(true);
             if (Input.GetButtonDown("MapInteraction"))
             {
                 rotatePlatform();
@@ -43,6 +43,6 @@ public class LeverScript : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         col = false;
-        uinteract.SetActive(false);
+        //uinteract.SetActive(false);
     }
 }

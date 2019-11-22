@@ -14,6 +14,9 @@ namespace Com.MyCompany.multiTest
     /// </summary>
     public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
     {
+        public GameObject uinteract;
+        bool col = false;
+
         public float Health = 1f;
         public static GameObject LocalPlayerInstance;
 
@@ -107,6 +110,7 @@ namespace Com.MyCompany.multiTest
         /// </summary>
         void Start()
         {
+            uinteract.SetActive(false);
             CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
 
 
@@ -142,13 +146,24 @@ namespace Com.MyCompany.multiTest
         /// MonoBehaviour method called on GameObject by Unity on every frame.
         /// </summary>
         void Update()
-        {
-
+        {    
 
 
             // we only process Inputs if we are the local player
             if (photonView.IsMine)
             {
+
+                if (col == true)
+                {
+                    try
+                    {
+                        uinteract.SetActive(true);
+                    }
+                    catch
+                    {
+                        Debug.Log("Error Mostrando la interaccion");
+                    }
+                }
 
                 ProcessInputs();
                 
@@ -177,6 +192,10 @@ namespace Com.MyCompany.multiTest
             {
                 return;
             }
+                if (other.name.Contains("Panel2"))
+                {
+                    col = true;
+            }
             // We are only interested in Beamers
             // we should be using tags but for the sake of distribution, let's simply check by name.
             //Debug.LogWarning("hello" + SceneManager.GetActiveScene().name, this);
@@ -185,6 +204,20 @@ namespace Com.MyCompany.multiTest
                 return;
             }
             Health -= 0.1f;
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (!photonView.IsMine)
+            {
+                return;
+            }
+
+            if (other.name.Contains("Panel2"))
+            {
+                col = false;
+                uinteract.SetActive(false);
+            }
         }
         /// <summary>
         /// MonoBehaviour method called once per frame for every Collider 'other' that is touching the trigger.
