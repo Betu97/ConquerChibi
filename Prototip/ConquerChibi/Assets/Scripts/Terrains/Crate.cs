@@ -38,10 +38,8 @@ public class Crate : MonoBehaviour
     public void OnMouseUp()
     {
         InteractText = "Press F to ";
-
-        mIsRotated = !mIsRotated;
+        
         InteractText += mIsRotated ? "to damage" : "to hide";
-
-        GetComponent<Animator>().SetBool("rotated", mIsRotated);
+       
     }
 }
