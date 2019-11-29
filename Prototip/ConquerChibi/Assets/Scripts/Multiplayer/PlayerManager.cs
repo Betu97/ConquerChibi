@@ -160,7 +160,7 @@ namespace Com.MyCompany.multiTest
                         uinteract.SetActive(true);
                         if (Input.GetButtonDown("MapInteraction"))
                         {
-                            LeverScript.Instance.rotatePlatform();
+                            photonView.RPC("rotate", RpcTarget.All);    
                         }
                     }
                     catch
@@ -184,6 +184,12 @@ namespace Com.MyCompany.multiTest
             }
         }
 
+        [PunRPC]
+        public void rotate()
+        {
+            LeverScript.Instance.rotatePlatform();
+        }
+
         /// <summary>
         /// MonoBehaviour method called when the Collider 'other' enters the trigger.
         /// Affect Health of the Player if the collider is a beam
@@ -196,9 +202,10 @@ namespace Com.MyCompany.multiTest
             {
                 return;
             }
-                if (other.name.Contains("Panel2"))
-                {
-                    col = true;
+
+            if (other.name.Contains("Panel2"))
+            {
+                col = true;
             }
             // We are only interested in Beamers
             // we should be using tags but for the sake of distribution, let's simply check by name.
