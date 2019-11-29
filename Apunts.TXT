@@ -44,6 +44,9 @@ https://www.cgpeers.com/login.php (s'obre el día 1 i el día 15 de cada mes per
 https://catlikecoding.com/unity/tutorials/ = tutorials de Unity
 shadertoy.com = toquetejar shaders
 https://www.youtube.com/watch?v=Ar9eIn4z6XE Shader Graph en Unity
+github.com/michidk/Unity-Script-Collection (unity script collection)
+(itween unity assets)
+dotween.demigiant.com
 
 tiny.cc/kj6ogz
 ________________
