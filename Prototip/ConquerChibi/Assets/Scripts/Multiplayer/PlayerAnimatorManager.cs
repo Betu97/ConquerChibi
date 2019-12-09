@@ -12,6 +12,9 @@ namespace Com.MyCompany.multiTest
         private float directionDampTime = .25f;
         private Animator animator;
 
+        private float horizontalSpeed = 2.0F;
+        private float verticalSpeed = 2.0F;
+
         #endregion
 
         #region MonoBehaviour CallBacks
@@ -43,6 +46,15 @@ namespace Com.MyCompany.multiTest
                 {
                     return;
                 }
+
+                //rotacio de la camara en X. 
+                //TODO: El moviment Y per ara no es necesari i s'ha d'arreglar
+                float hh = horizontalSpeed * Input.GetAxis("Mouse X");
+                float vv = verticalSpeed * Input.GetAxis("Mouse Y");
+                //camara sense mirar adalt i abaix:
+                transform.Rotate(0, hh, 0);
+                //camara amb moviment adalt i abaix:
+                //transform.Rotate(-v/2, h, 0);
                 
                 //MOVIMENT A ELIMINAR --------
 
@@ -59,13 +71,21 @@ namespace Com.MyCompany.multiTest
                     }
                 }
                 float h = Input.GetAxis("Horizontal");
+                print("h: " + h);
                 float v = Input.GetAxis("Vertical");
+                print("v: " + v);
                 if (v < 0)
                 {
                     v = 0;
                 }
-                animator.SetFloat("Speed", h * h + v * v);
-                animator.SetFloat("Direction", h, directionDampTime, Time.deltaTime);
+                animator.SetFloat("Speed", v * v);
+                animator.SetFloat("Direction", h * 3, directionDampTime, Time.deltaTime);
+                
+                if(Input.GetKey(KeyCode.S)){
+                    print("i'm in S");
+                    animator.SetFloat("Speed", v * v);
+                }
+                
                 
                //MOVIMENT A ELIMINAR --------
             }
