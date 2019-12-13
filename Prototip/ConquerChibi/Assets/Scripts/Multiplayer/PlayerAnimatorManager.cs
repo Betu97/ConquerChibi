@@ -56,8 +56,6 @@ namespace Com.MyCompany.multiTest
                 //camara amb moviment adalt i abaix:
                 //transform.Rotate(-v/2, h, 0);
                 
-                //MOVIMENT A ELIMINAR --------
-
                 // deal with Jumping
                 AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
                 
@@ -71,23 +69,11 @@ namespace Com.MyCompany.multiTest
                     }
                 }
                 float h = Input.GetAxis("Horizontal");
-                print("h: " + h);
                 float v = Input.GetAxis("Vertical");
-                print("v: " + v);
-                if (v < 0)
-                {
-                    v = 0;
-                }
-                animator.SetFloat("Speed", v * v);
+              
+                animator.SetFloat("Speed", v);
                 animator.SetFloat("Direction", h * 3, directionDampTime, Time.deltaTime);
-                
-                if(Input.GetKey(KeyCode.S)){
-                    print("i'm in S");
-                    animator.SetFloat("Speed", v * v);
-                }
-                
-                
-               //MOVIMENT A ELIMINAR --------
+               
             }
             catch
             {
