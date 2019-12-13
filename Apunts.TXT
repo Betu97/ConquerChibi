@@ -47,6 +47,7 @@ https://www.youtube.com/watch?v=Ar9eIn4z6XE Shader Graph en Unity
 github.com/michidk/Unity-Script-Collection (unity script collection)
 (itween unity assets)
 dotween.demigiant.com
+github.com/michidk/Unity-Script-Collection
 
 tiny.cc/kj6ogz
 
@@ -87,3 +88,5 @@ ________________
 *Llum: permet emfatitzar un objecte sobre la resta (guía)
 *Vistes: tipus de càmera per a generar sensacions (ensenyar per on s'ha d'anar, magnificació de sentiments, zenital per generar vertígen, indicador del següent pas a seguir/gameplay)
 *"Touch": distribució del level design que aporta informació al jugador sobre els personatges, el lore...
+
+Packages Unity: Cinemachine (), ProBuilder (fer graybox)
