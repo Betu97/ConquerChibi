@@ -24,13 +24,16 @@ namespace Com.MyCompany.multiTest
         [SerializeField]
         public GameObject PlayerUiPrefab;
 
+        [Tooltip("The Player's Fire Point")]
+        [SerializeField]
+        public GameObject FirePoint;
+        private bool CanFire = true;
+        public float Firerate = 2.0f;
+
         #region Private Fields
 
-        [Tooltip("The Beams GameObject to control")]
-        [SerializeField]
-        private GameObject beams;
         //True, when the user is firing
-        bool IsFiring;
+        //bool IsFiring;
         #endregion
 
         #region Private Methods
@@ -50,24 +53,24 @@ namespace Com.MyCompany.multiTest
             if (stream.IsWriting)
             {
                 // We own this player: send the others our data
-                stream.SendNext(IsFiring);
+                //stream.SendNext(IsFiring);
             }
             else
             {
                 // Network player, receive data
-                this.IsFiring = (bool)stream.ReceiveNext();
+                //this.IsFiring = (bool)stream.ReceiveNext();
             }
 
             if (stream.IsWriting)
             {
                 // We own this player: send the others our data
-                stream.SendNext(IsFiring);
+                //stream.SendNext(IsFiring);
                 stream.SendNext(Health);
             }
             else
             {
                 // Network player, receive data
-                this.IsFiring = (bool)stream.ReceiveNext();
+                //this.IsFiring = (bool)stream.ReceiveNext();
                 this.Health = (float)stream.ReceiveNext();
             }
 
@@ -94,15 +97,6 @@ namespace Com.MyCompany.multiTest
             // #Critical
             // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
             DontDestroyOnLoad(this.gameObject);
-
-            if (beams == null)
-            {
-                Debug.LogError("<Color=Red><a>Missing</a></Color> Beams Reference.", this);
-            }
-            else
-            {
-                beams.SetActive(false);
-            }
         }
 
         /// <summary>
@@ -169,6 +163,13 @@ namespace Com.MyCompany.multiTest
                     }
                 }
 
+                if (Input.GetButton("Fire1") && CanFire)
+                {
+                        photonView.RPC("shoot", RpcTarget.All, FirePoint.transform.position, FirePoint.transform.rotation);
+                        StartCoroutine(StartCounting(Firerate));
+                        CanFire = false;
+                }
+
                 ProcessInputs();
                 
                 if (Health <= 0f)
@@ -176,18 +177,19 @@ namespace Com.MyCompany.multiTest
                     GameManager.Instance.LeaveRoom();
                 }
             }
-
-            // trigger Beams active state
-            if (beams != null && IsFiring != beams.activeSelf)
-            {
-                beams.SetActive(IsFiring);
-            }
         }
 
         [PunRPC]
         public void rotate()
         {
             LeverScript.Instance.rotatePlatform();
+        }
+
+        [PunRPC]
+        public void shoot(Vector3 pos, Quaternion angle)
+        {
+            //GameManager.Instance.SpawnVFX(FirePoint.transform.position, FirePoint.transform.rotation);
+            GameManager.Instance.SpawnVFX(pos, angle);
         }
 
         /// <summary>
@@ -230,6 +232,15 @@ namespace Com.MyCompany.multiTest
                 uinteract.SetActive(false);
             }
         }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.collider.tag == "Projectile")
+            {
+                Health -= 0.1f;
+            }
+        }
+
         /// <summary>
         /// MonoBehaviour method called once per frame for every Collider 'other' that is touching the trigger.
         /// We're going to affect health while the beams are touching the player
@@ -249,7 +260,7 @@ namespace Com.MyCompany.multiTest
                 Health -= 0.1f * Time.deltaTime;
             }
 
-            if (!other.name.Contains("Beam") || SceneManager.GetActiveScene().name.Equals("Lobby"))
+            if (SceneManager.GetActiveScene().name.Equals("Lobby"))
             {
                 return;
             }
@@ -287,11 +298,14 @@ namespace Com.MyCompany.multiTest
         /// </summary>
         void ProcessInputs()
         {
+            /*
             if (Input.GetButtonDown("Fire1"))
             {
                 if (!IsFiring)
                 {
                     IsFiring = true;
+                    StartCoroutine(StartCounting(Firerate));
+                    CanFire = false;
                 }
             }
             if (Input.GetButtonUp("Fire1"))
@@ -300,11 +314,18 @@ namespace Com.MyCompany.multiTest
                 {
                     IsFiring = false;
                 }
-            }
+            }*/
         }
 
-        #if UNITY_5_4_OR_NEWER
-                public override void OnDisable()
+        private IEnumerator StartCounting(float firerate)
+        {
+            float waitTime = 1 / Firerate;
+            yield return new WaitForSeconds(waitTime);
+            CanFire = true;
+        }
+
+#if UNITY_5_4_OR_NEWER
+        public override void OnDisable()
                 {
                     // Always call the base to remove callbacks
                     base.OnDisable();

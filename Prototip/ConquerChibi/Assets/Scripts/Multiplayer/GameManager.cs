@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 
 using UnityEngine;
@@ -16,9 +17,19 @@ namespace Com.MyCompany.multiTest
     {
         public static GameManager Instance;
         public GameObject playerPrefab;
+        public Canvas canvas;
+        public List<GameObject> vfx = new List<GameObject>();
+
+        Boolean menu;
+        private GameObject effectToSpawn;
 
         void Start()
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            menu = false;
+            effectToSpawn = vfx[0];
+
             Instance = this;
             if (PlayerManager.LocalPlayerInstance == null)
             {
@@ -31,6 +42,28 @@ namespace Com.MyCompany.multiTest
                 Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
             }
             
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown("escape"))
+            {
+                if(menu == false)
+                {
+                    canvas.gameObject.SetActive(true);
+                    menu = true;
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                }
+                else
+                {
+                    canvas.gameObject.SetActive(false);
+                    menu = false;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
+                
+            }
         }
 
         #region Photon Callbacks
@@ -70,6 +103,8 @@ namespace Com.MyCompany.multiTest
         /// </summary>
         public override void OnLeftRoom()
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene(0);
         }
 
@@ -87,16 +122,28 @@ namespace Com.MyCompany.multiTest
 
         public void LeaveRoom()
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             PhotonNetwork.LeaveRoom();
         }
 
 
-        #endregion
+        public void SpawnVFX(Vector3 from, Quaternion to)
+        {
+            GameObject vfx;
 
-        #region Private Methods
+            vfx = Instantiate(effectToSpawn, from, Quaternion.identity);
+            vfx.transform.localRotation = to;
+        }
+    
 
 
-        void LoadArena()
+    #endregion
+
+    #region Private Methods
+
+
+    void LoadArena()
         {
             if (!PhotonNetwork.IsMasterClient)
             {
