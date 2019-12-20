@@ -59,14 +59,14 @@ namespace Com.MyCompany.multiTest
                 // deal with Jumping
                 AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
                 
-                // only allow jumping if we are running.
-                if (stateInfo.IsName("Base Layer.Run"))
+                // When using trigger parameter
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    // When using trigger parameter
-                    if (Input.GetButtonDown("Fire2"))
-                    {
-                        animator.SetTrigger("Jump");
-                    }
+                    animator.SetBool("Jump", true);
+                }
+                if (Input.GetKeyUp(KeyCode.Space))
+                {
+                    animator.SetBool("Jump", false);
                 }
                 float h = Input.GetAxis("Horizontal");
                 float v = Input.GetAxis("Vertical");
