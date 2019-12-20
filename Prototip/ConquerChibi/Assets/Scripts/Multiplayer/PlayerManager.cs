@@ -19,6 +19,8 @@ namespace Com.MyCompany.multiTest
 
         public float Health = 1f;
         public static GameObject LocalPlayerInstance;
+        public AudioSource Attack1;
+        public AudioSource HitAttack1;
 
         [Tooltip("The Player's UI GameObject Prefab")]
         [SerializeField]
@@ -190,6 +192,7 @@ namespace Com.MyCompany.multiTest
         {
             //GameManager.Instance.SpawnVFX(FirePoint.transform.position, FirePoint.transform.rotation);
             GameManager.Instance.SpawnVFX(pos, angle);
+            Attack1.Play();
         }
 
         /// <summary>
@@ -237,6 +240,7 @@ namespace Com.MyCompany.multiTest
         {
             if (collision.collider.tag == "Projectile")
             {
+                HitAttack1.Play();
                 Health -= 0.1f;
             }
         }
