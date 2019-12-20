@@ -215,7 +215,7 @@ namespace Com.MyCompany.multiTest
             // We are only interested in Beamers
             // we should be using tags but for the sake of distribution, let's simply check by name.
             //Debug.LogWarning("hello" + SceneManager.GetActiveScene().name, this);
-            if (!other.name.Contains("Beam") || SceneManager.GetActiveScene().name.Equals("Lobby") || !other.name.Contains("Pinxo"))
+            if (SceneManager.GetActiveScene().name.Equals("Lobby") || !other.name.Contains("Pinxo"))
             {
                 return;
             }
@@ -263,13 +263,6 @@ namespace Com.MyCompany.multiTest
             {
                 Health -= 0.1f * Time.deltaTime;
             }
-
-            if (SceneManager.GetActiveScene().name.Equals("Lobby"))
-            {
-                return;
-            }
-            // we slowly affect health when beam is constantly hitting us, so player has to move to prevent death.
-            Health -= 0.1f * Time.deltaTime;
         }
 
             #if !UNITY_5_4_OR_NEWER
