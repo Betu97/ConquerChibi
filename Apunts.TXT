@@ -48,7 +48,9 @@ github.com/michidk/Unity-Script-Collection (unity script collection)
 (itween unity assets)
 dotween.demigiant.com
 github.com/michidk/Unity-Script-Collection
-shadertoy.com
+https://hdrihaven.com/hdris/
+kenney.nl
+socalabs.com
 
 tiny.cc/kj6ogz
 
@@ -91,3 +93,5 @@ ________________
 *"Touch": distribució del level design que aporta informació al jugador sobre els personatges, el lore...
 
 Packages Unity: Cinemachine (), ProBuilder (fer graybox)
+
+t:<categoria (sprite / prefab...)
