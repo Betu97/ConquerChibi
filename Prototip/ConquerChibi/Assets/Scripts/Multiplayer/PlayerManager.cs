@@ -18,6 +18,7 @@ namespace Com.MyCompany.multiTest
         bool col = false;
 
         public float Health = 1f;
+        public float SpecialAttackMeter = 0f;
         public static GameObject LocalPlayerInstance;
         public AudioSource Attack1;
         public AudioSource HitAttack1;
@@ -68,12 +69,14 @@ namespace Com.MyCompany.multiTest
                 // We own this player: send the others our data
                 //stream.SendNext(IsFiring);
                 stream.SendNext(Health);
+                stream.SendNext(SpecialAttackMeter);
             }
             else
             {
                 // Network player, receive data
                 //this.IsFiring = (bool)stream.ReceiveNext();
                 this.Health = (float)stream.ReceiveNext();
+                this.SpecialAttackMeter = (float)stream.ReceiveNext();
             }
 
         }
@@ -178,6 +181,12 @@ namespace Com.MyCompany.multiTest
                 {
                     GameManager.Instance.LeaveRoom();
                 }
+
+                if(SpecialAttackMeter >= 1f && Input.GetButton("Fire1") && CanFire)
+                {
+                    SpecialAttackMeter = 0f;
+
+                }
             }
         }
 
@@ -220,6 +229,7 @@ namespace Com.MyCompany.multiTest
                 return;
             }
             Health -= 0.1f;
+            SpecialAttackMeter += 0.2f;
         }
 
         private void OnTriggerExit(Collider other)
@@ -242,6 +252,7 @@ namespace Com.MyCompany.multiTest
             {
                 HitAttack1.Play();
                 Health -= 0.1f;
+                SpecialAttackMeter += 0.25f;
             }
         }
 
@@ -262,6 +273,7 @@ namespace Com.MyCompany.multiTest
             if (other.gameObject.tag == "Pinxo")
             {
                 Health -= 0.1f * Time.deltaTime;
+                SpecialAttackMeter += 0.1f * Time.deltaTime;
             }
         }
 
