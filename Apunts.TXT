@@ -51,6 +51,7 @@ github.com/michidk/Unity-Script-Collection
 https://hdrihaven.com/hdris/
 kenney.nl
 socalabs.com
+https://natureofcode.com/book/chapter-1-vectors/
 
 tiny.cc/kj6ogz
 
