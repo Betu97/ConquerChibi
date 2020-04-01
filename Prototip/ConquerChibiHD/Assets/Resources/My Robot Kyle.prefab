@@ -1738,8 +1738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1
-  Target: {fileID: 6451980873266154744}
-  Player: {fileID: 6451980873266154744}
+  Target: {fileID: 0}
+  Player: {fileID: 0}
   height: 3
   distance: 7
   mouseX: 0
