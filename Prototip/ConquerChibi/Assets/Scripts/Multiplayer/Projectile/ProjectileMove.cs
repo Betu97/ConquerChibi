@@ -32,11 +32,9 @@ public class ProjectileMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(transform.position, Camera.main.transform.forward * 10, Color.green);
         if(speed != 0)
         {
-            Vector3 currentTransform = Camera.main.transform.forward;
-            transform.position += (currentTransform + new Vector3(0, 0.3f, 0)) * (speed * Time.deltaTime);
+            transform.position += transform.forward * (speed * Time.deltaTime);
         }
         else
         {

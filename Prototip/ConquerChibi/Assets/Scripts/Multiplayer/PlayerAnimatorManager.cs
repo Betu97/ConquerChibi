@@ -26,7 +26,7 @@ namespace Com.MyCompany.multiTest
             animator = GetComponent<Animator>();
             if (!animator)
             {
-                Debug.LogError("PlayerAnimatorManager is Missing Animator Component", this);
+                //Debug.LogError("PlayerAnimatorManager is Missing Animator Component", this);
             }
             //animator.gameObject.AddComponent<PlayerMovement>().animator = animator;
 
@@ -49,12 +49,12 @@ namespace Com.MyCompany.multiTest
 
                 //rotacio de la camara en X. 
                 //TODO: El moviment Y per ara no es necesari i s'ha d'arreglar
-                float X_Mouse_Movement = horizontalSpeed * Input.GetAxis("Mouse X");
-                float Y_Mouse_Movement = verticalSpeed * Input.GetAxis("Mouse Y");
+                float hh = horizontalSpeed * Input.GetAxis("Mouse X");
+                float vv = verticalSpeed * Input.GetAxis("Mouse Y");
                 //camara sense mirar adalt i abaix:
-                transform.Rotate(0, X_Mouse_Movement, 0);
+                transform.Rotate(0, hh, 0);
                 //camara amb moviment adalt i abaix:
-                //transform.Rotate(-Y_Mouse_Movement/2, X_Mouse_Movement, 0);
+                //transform.Rotate(-v/2, h, 0);
                 
                 // deal with Jumping
                 AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
@@ -79,11 +79,15 @@ namespace Com.MyCompany.multiTest
             {
 
             }
+            
         }
 
         void LateUpdate(){
 
         }
+
+
+
         #endregion
     }
 }

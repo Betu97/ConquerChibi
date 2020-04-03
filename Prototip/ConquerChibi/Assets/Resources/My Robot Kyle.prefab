@@ -1756,7 +1756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uinteract: {fileID: 6380954808178790682}
   Health: 1
-  SpecialAttackMeter: 0
   Attack1: {fileID: 3998547281298166633}
   HitAttack1: {fileID: 6588533555759150400}
   PlayerUiPrefab: {fileID: 4451236433116301331, guid: bcefee3de6ab5ee46b1a7cb8c3bab9ab,
