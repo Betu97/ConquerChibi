@@ -117,7 +117,7 @@ namespace Com.MyCompany.multiTest
             {
                 if (photonView.IsMine)
                 {
-                    _cameraWork.Start();
+                    _cameraWork.OnStartFollowing();
                 }
             }
             else
