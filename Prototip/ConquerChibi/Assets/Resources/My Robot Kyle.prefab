@@ -1737,11 +1737,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8652cae6f9f087428c50fad68f9fcac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 7
+  rotationSpeed: 1
+  Target: {fileID: 0}
+  Player: {fileID: 0}
   height: 3
-  heightSmoothLag: 0.3
-  centerOffset: {x: 0, y: 4, z: 0}
-  followOnStart: 0
+  distance: 7
+  mouseX: 0
+  mouseY: 0
 --- !u!114 &8119653670102480695
 MonoBehaviour:
   m_ObjectHideFlags: 0
