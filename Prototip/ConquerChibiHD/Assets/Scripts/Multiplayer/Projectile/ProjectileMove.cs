@@ -8,12 +8,15 @@ public class ProjectileMove : MonoBehaviour
     public float fireRate;
     public GameObject muzzlePrefab;
     public GameObject hitPrefab;
+    private Vector3 currentTransform;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        if (muzzlePrefab != null)
-        {
+    void Start(){
+        currentTransform = Camera.main.transform.forward;
+        Debug.Log("currentTransform pre minus: " + currentTransform);
+        currentTransform.y = currentTransform.y - (float) 0.17;
+        Debug.Log("currentTransform post minus: " + currentTransform);
+        if (muzzlePrefab != null){
             var muzzleVFX = Instantiate(muzzlePrefab, transform.position, Quaternion.identity);
             muzzleVFX.transform.forward = gameObject.transform.forward;
             var psMuzzle = muzzleVFX.GetComponent<ParticleSystem>();
@@ -35,7 +38,6 @@ public class ProjectileMove : MonoBehaviour
         Debug.DrawRay(transform.position, Camera.main.transform.forward * 10, Color.green);
         if(speed != 0)
         {
-            Vector3 currentTransform = Camera.main.transform.forward;
             transform.position += (currentTransform + new Vector3(0, 0.3f, 0)) * (speed * Time.deltaTime);
         }
         else
