@@ -32,9 +32,9 @@ namespace Com.MyCompany.multiTest
         [SerializeField]
         private Slider playerHealthSlider;
 
-        [Tooltip("UI Slider to display Player's Final Attack Meter")]
+        /*[Tooltip("UI Slider to display Player's Final Attack Meter")]
         [SerializeField]
-        private Slider finalAttackSlider;
+        private Slider finalAttackSlider;*/
 
         #endregion
 
@@ -55,10 +55,10 @@ namespace Com.MyCompany.multiTest
                 playerHealthSlider.value = target.Health;
             }
 
-            if (finalAttackSlider != null)
+            /*if (finalAttackSlider != null)
             {
                 finalAttackSlider.value = target.SpecialAttackMeter;
-            }
+            }*/
 
             // Destroy itself if the target is null, It's a fail safe when Photon is destroying Instances of a Player over the network
             if (target == null)
