@@ -75,7 +75,6 @@
     <Compile Include="Assets\Scripts\Multiplayer\CameraWork.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\GameManager.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\Launcher.cs" />
-    <Compile Include="Assets\Scripts\Multiplayer\MenuChooser.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\PlayerAnimatorManager.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\PlayerMovement.cs" />

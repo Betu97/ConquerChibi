@@ -36,7 +36,5 @@ MonoBehaviour:
   - RespawnSpaceship
   - rotate
   - shoot
-  - unvote
-  - vote
   DisableAutoOpenWizard: 1
   ShowSettings: 0
