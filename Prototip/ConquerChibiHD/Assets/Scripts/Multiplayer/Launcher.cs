@@ -13,6 +13,7 @@ namespace Com.MyCompany.multiTest
         public GameObject controlPanel;
         public GameObject progressLabel;
         bool isConnecting;
+        bool admin;
 
         #endregion
 
@@ -40,6 +41,7 @@ namespace Com.MyCompany.multiTest
             // #Critical
             // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
             PhotonNetwork.AutomaticallySyncScene = true;
+            admin = false;
         }
 
 
@@ -88,7 +90,10 @@ namespace Com.MyCompany.multiTest
             Application.Quit();
         }
 
-
+        public void SetAdmin(bool boss)
+        {
+            admin = boss;
+        }
         #endregion
 
         #region MonoBehaviourPunCallbacks Callbacks
@@ -123,7 +128,14 @@ namespace Com.MyCompany.multiTest
 
                 // #Critical
                 // Load the Room Level.
-                PhotonNetwork.LoadLevel("Lobby");
+                if (!admin)
+                {
+                    PhotonNetwork.LoadLevel("WaitingPlayers");
+                }
+                else
+                {
+                    PhotonNetwork.LoadLevel("Lobby");
+                }
             }
         }
 

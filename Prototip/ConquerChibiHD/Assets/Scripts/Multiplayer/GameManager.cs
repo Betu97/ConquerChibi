@@ -22,31 +22,35 @@ namespace Com.MyCompany.multiTest
 
         Boolean menu;
         private GameObject effectToSpawn;
+        bool startedGame;
 
         void Start()
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            menu = false;
-            effectToSpawn = vfx[0];
+            if (InGame())
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                menu = false;
+                effectToSpawn = vfx[0];
 
-            Instance = this;
-            if (PlayerManager.LocalPlayerInstance == null)
-            {
-                Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
-                // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
-            }
-            else
-            {
-                Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
+                Instance = this;
+                if (PlayerManager.LocalPlayerInstance == null)
+                {
+                    Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
+                    // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+                }
+                else
+                {
+                    Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
+                }
             }
             
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown("escape"))
+            if (Input.GetKeyDown("escape") && InGame())
             {
                 if(menu == false)
                 {
@@ -152,17 +156,41 @@ namespace Com.MyCompany.multiTest
             Debug.LogFormat("PhotonNetwork : Loading Level : {0}", PhotonNetwork.CurrentRoom.PlayerCount);
             if(PhotonNetwork.CurrentRoom.PlayerCount == 1)
             {
-                PhotonNetwork.LoadLevel("Lobby");
+                if (SceneManager.GetActiveScene().name != "ArenaSelection")
+                {
+                    PhotonNetwork.LoadLevel("Lobby");
+                }
+                else
+                {
+                    PhotonNetwork.LoadLevel("WaitingPlayers");
+                }
+                
             }
             else
             {
-                PhotonNetwork.LoadLevel("AldeaYamikaze");
+                if (startedGame || SceneManager.GetActiveScene().name == "Lobby")
+                {
+                    PhotonNetwork.LoadLevel("AldeaYamikaze");
+                }
+                else
+                {
+                    PhotonNetwork.LoadLevel("ArenaSelection");
+                }
             }
-            
         }
 
+        private bool InGame()
+        {
+            if (SceneManager.GetActiveScene().name != "ArenaSelection" && SceneManager.GetActiveScene().name != "WaitingPlayers")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         #endregion
-
     }
 }
