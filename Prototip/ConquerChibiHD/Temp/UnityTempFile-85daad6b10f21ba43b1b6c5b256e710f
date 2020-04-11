@@ -1,0 +1,522 @@
+/target:library
+/nowarn:0169
+/out:Temp/Unity.RenderPipelines.HighDefinition.Runtime.dll
+/unsafe
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:Library/PlayerScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll
+/reference:Library/PlayerScriptAssemblies/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll
+/reference:Library/PlayerScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll
+/reference:Library/PlayerScriptAssemblies/UnityEngine.UI.dll
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ARModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ProfilerModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UNETModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
+/reference:Assets/Plugins/Photon/PhotonLibs/Photon3Unity3D.dll
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll"
+/reference:"D:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll"
+/define:UNITY_2019_3_7
+/define:UNITY_2019_3
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:INCLUDE_DYNAMIC_GI
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:PLATFORM_SUPPORTS_MONO
+/define:RENDER_SOFTWARE_CURSOR
+/define:ENABLE_VIDEO
+/define:PLATFORM_STANDALONE
+/define:PLATFORM_STANDALONE_WIN
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_STANDALONE
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_MOVIES
+/define:ENABLE_NETWORK
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CLUSTERINPUT
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_MONO
+/define:NET_STANDARD_2_0
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:PHOTON_UNITY_NETWORKING
+/define:PUN_2_0_OR_NEWER
+/define:PUN_2_OR_NEWER
+/define:CROSS_PLATFORM_INPUT
+/define:HDRP_1_OR_NEWER
+/define:ENABLE_VR_MODULE
+/define:ENABLE_XR_MODULE
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\AssemblyInfo.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\CoreResources\GPUCopy.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Debugging\FrameSettingsFieldAttribute.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Migration\IVersionable.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Migration\MigrationDescription.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Migration\MigrationStep.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Textures\EncodeBC6H.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Textures\TextureCache.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Textures\TextureCache2D.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Textures\TextureCacheCubemap.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Core\Utilities\GeometryUtils.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\ColorPickerDebug.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\DebugDisplay.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\DebugLightVolumes.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\DecalsDebug.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\FalseColorDebug.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\LightingDebug.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\MaterialDebug.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\MipMapDebug.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\RayCountManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Debug\TransparencyDebug.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Documentation.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\AtmosphericScattering\AtmosphericScattering.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\AtmosphericScattering\ExponentialFog.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\AtmosphericScattering\Fog.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\AtmosphericScattering\ShaderVariablesAtmosphericScattering.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\AtmosphericScattering\VolumetricFog.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\DiffusionProfileOverride.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\GlobalIllumination.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\GlobalIlluminationUtils.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\IndirectLightingController.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Light\HDAdditionalLightData.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Light\HDAdditionalLightData.Types.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Light\HDAdditionalLightData.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\LightDefinition.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\LightLoop\GlobalLightLoopSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\LightLoop\LightLoop.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\LightLoop\ShaderVariablesLightLoop.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\LightUtils.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDAdditionalReflectionData.Legacy.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDAdditionalReflectionData.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDAdditionalReflectionData.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDProbe.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDProbe.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDProbeCullState.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDProbeCullingResults.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDProbeSystem.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\HDRuntimeReflectionSystem.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\PlanarReflectionProbe.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\PlanarReflectionProbe.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\PlanarReflectionProbeCache.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\ReflectionProbeCache.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\ReflectionSystemParameters.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\Volume\InfluenceVolume.Editor.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\Volume\InfluenceVolume.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\Volume\InfluenceVolume.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\Volume\ProxyVolume.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\Volume\ProxyVolume.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\Volume\ReflectionProxyVolumeComponent.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Reflection\Volume\ShapeType.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\ScreenSpaceLighting\AmbientOcclusion.RenderGraph.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\ScreenSpaceLighting\AmbientOcclusion.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\ScreenSpaceLighting\ScreenSpaceReflection.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\ScreenSpaceLighting\ScreenSpaceRefraction.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\ScreenSpaceLighting\ShaderVariablesScreenSpaceLighting.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\AdditionalShadowData.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\ContactShadows.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\HDShadowAtlas.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\HDShadowManager.RenderGraph.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\HDShadowManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\HDShadowSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\HDShadowUtils.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\MicroShadowing.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\Shadow\ScreenSpaceShadowManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\SphericalHarmonics.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\VolumetricLighting\DensityVolume.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\VolumetricLighting\DensityVolume.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\VolumetricLighting\DensityVolumeManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\VolumetricLighting\Texture3DAtlas.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\VolumetricLighting\VolumetricLighting.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Lighting\VolumetricLighting\VolumetricLightingController.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\AxF\AxF.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\AxF\AxFLTCAreaLight\LtcData.GGX2.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Builtin\BuiltinData.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Decal\DBufferManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Decal\Decal.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Decal\DecalProjector.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Decal\DecalProjector.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Decal\DecalSystem.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Decal\GlobalDecalSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Decal\ShaderVariablesDecal.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\DiffusionProfile\DiffusionProfileSettings.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\DiffusionProfile\DiffusionProfileSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Eye\Eye.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Fabric\Fabric.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Fabric\IBLFilterCharlie.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\GBufferManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\GGXConvolution\GGXConvolution.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\GGXConvolution\IBLFilterGGX.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Hair\Hair.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\IBLFilterBSDF.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\LTCAreaLight\LTCAreaLight.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\LTCAreaLight\LTCAreaLightCookieManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\LTCAreaLight\LtcData.DisneyDiffuse.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\LTCAreaLight\LtcData.GGX.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Lit\Lit.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\MaterialExtension.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\PreIntegratedFGD\PreIntegratedFGD.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\RenderPipelineMaterial.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\SharedRTManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\SphericalCapPivot\PivotData.GGX.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\SphericalCapPivot\SPTDistribution.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\StackLit\StackLit.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\StandardLit\StandardLit.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\SubsurfaceScattering\ShaderVariablesSubsurfaceScattering.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\SubsurfaceScattering\SubsurfaceScatteringManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Material\Unlit\Unlit.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\Bloom.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\ChannelMixer.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\ChromaticAberration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\ColorAdjustments.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\ColorCurves.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\DepthOfField.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\Exposure.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\FilmGrain.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\LensDistortion.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\LiftGammaGain.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\MotionBlur.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\PaniniProjection.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\ShadowsMidtonesHighlights.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\SplitToning.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\Tonemapping.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\Vignette.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Components\WhiteBalance.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\CustomPostProcessing\CustomPostProcessInjectionPoint.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\CustomPostProcessing\CustomPostProcessVolumeComponent.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\GlobalPostProcessSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\IPostProcessComponent.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\PostProcessSystem.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\PostProcessing\Shaders\UberPostFeatures.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Camera\HDAdditionalCameraData.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Camera\HDAdditionalCameraData.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Camera\HDCamera.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Camera\HDCameraFrameHistoryType.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\CullingGroupManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\GlobalLightingQualitySettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\GlobalLowResolutionTransparencySettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\GlobalPostProcessingQualitySettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDCustomSamplerId.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDGPUAsyncTask.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipeline.Debug.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipeline.LightLoop.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipeline.LookDev.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipeline.Prepass.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipeline.RenderGraph.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipeline.RenderGraphUtils.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipeline.SubsurfaceScattering.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipeline.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipelineAsset.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipelineAsset.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipelineEditorResources.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipelineEditorResources.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderPipelineRayTracingResources.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDRenderQueue.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\HDStringConstants.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\MRTBufferManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\PathTracing\PathTracing.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDDiffuseDenoiser.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDRaytracingAmbientOcclusion.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDRaytracingDeferredLightLoop.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDRaytracingIndirectDiffuse.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDRaytracingLightCluster.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDRaytracingManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDRaytracingRecursiveRenderer.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDRaytracingReflection.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDReflectionDenoiser.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDSimpleDenoiser.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\HDTemporalFilter.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\LightCluster.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\RayTracingSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Raytracing\RecursiveRendering.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\AOV\AOVBuffers.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\AOV\AOVRequest.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\AOV\AOVRequestBuilder.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\AOV\AOVRequestData.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\AOV\AOVRequestDataCollection.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\AOV\RenderOutputProperties.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\CustomPass\CustomPass.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\CustomPass\CustomPassInjectionPoint.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\CustomPass\CustomPassVolume.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\DrawRenderersCustomPass.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\FullScreenCustomPass.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPass\MipGenerator.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPipelineResources.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\RenderPipelineResources.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\SceneViewDrawMode.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\CaptureSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\FrameSettings.Migration.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\FrameSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\FrameSettingsHistory.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\RenderPipelineSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\ScalableSetting.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\ScalableSettingSchema.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\ScalableSettingSchemaId.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Settings\ScalableSettingValue.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\ShaderPass\ShaderPass.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Utility\BlueNoise.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Utility\HDUtils.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\Utility\Texture2DAtlas.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\XR\GlobalXRSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\XR\XRLayout.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\XR\XRPass.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\RenderPipeline\XR\XRSystem.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Scripting\GameObjectExtension.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\GradientSky\GradientSky.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\GradientSky\GradientSkyRenderer.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\HDRISky\HDRISky.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\HDRISky\HDRISkyRenderer.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\PhysicallyBasedSky\PhysicallyBasedSky.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\PhysicallyBasedSky\PhysicallyBasedSkyRenderer.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\SkyManager.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\SkyRenderer.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\SkyRenderingContext.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\SkySettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\SkyUpdateContext.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\StaticLightingSky.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Sky\VisualEnvironment.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\CameraCache.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\CameraPositionSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\CameraSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\CameraSettingsUtilities.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\DiffusionProfileHashTable.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\HDBakingUtilities.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\HDRenderPipelinePreferences.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\HDRenderUtilities.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\HDTextureUtilities.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\ProbeCapturePositionSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\ProbeSettings.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\ProbeSettingsUtilities.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\SceneObjectIDMap.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\TypeInfo.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\Utilities\VolumeComponentWithQuality.cs
+D:\BetuFolder\uni\5eAny\ProduccioDeVideojocs\ConquerChibi\ConquerChibi\Prototip\ConquerChibiHD\Library\PackageCache\com.unity.render-pipelines.high-definition@7.1.8\Runtime\VFXGraph\Utility\PropertyBinders\HDRPCameraBinder.cs
