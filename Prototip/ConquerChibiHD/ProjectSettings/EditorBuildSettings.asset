@@ -20,4 +20,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ArenaSelection.unity
     guid: 981fc5865892e0e4cab8521b926d322f
+  - enabled: 1
+    path: Assets/Scenes/Evig Herlighed.unity
+    guid: 7f724fc00cda73c47946207af2565d2c
+  - enabled: 1
+    path: "Assets/Scenes/K\u2019\xE1ax Chakhole\u2019en.unity"
+    guid: 8398f1f7bd6332641b736c2b8dcea0dd
+  - enabled: 1
+    path: Assets/Scenes/Pfarrei des Hungerus.unity
+    guid: 837006afeddc9594aa531e1a543023d8
+  - enabled: 1
+    path: Assets/Scenes/Siku Angisooq.unity
+    guid: e4a530504e5baed4db180a0c45d27e9b
   m_configObjects: {}
