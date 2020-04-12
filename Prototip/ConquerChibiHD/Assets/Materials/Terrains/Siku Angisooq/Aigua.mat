@@ -21,12 +21,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Aigua
-  m_Shader: {fileID: -6465566751694194690, guid: 114ec414822a29849b39a479b71b0253,
+  m_Shader: {fileID: -6465566751694194690, guid: 22e43a1166eefd54ba6d28530d23119a,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
@@ -36,10 +36,12 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_5A1C8570:
-        m_Texture: {fileID: 2800000, guid: 6ba0541b7735151489c867fa2ac7bfab, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0d34f1e47434a3347b5fb7c73bd0fe75, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_37B3BA3F: 0.2
     - Vector1_4A802628: 0.75
-    m_Colors: []
+    m_Colors:
+    - Color_338AB212: {r: 0.15036489, g: 0.23051706, b: 0.2924528, a: 0}
+    - Color_494ADAB1: {r: 0.14509797, g: 0.6, b: 0.7843137, a: 0}
