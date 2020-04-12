@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7198212118098171883}
   - component: {fileID: 2215253660137975261}
   - component: {fileID: 5585202533353361700}
+  - component: {fileID: 7838181214255261890}
   m_Layer: 0
   m_Name: houseTerrace
   m_TagString: Untagged
@@ -80,3 +81,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7838181214255261890
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6178505551814698488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8193616849839842100, guid: c148a2e0a07977143b0969d0a005f53c, type: 3}
