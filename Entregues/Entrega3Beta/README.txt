@@ -10,4 +10,3 @@ Known bugs:
 
     - El projectil del dispar no es mostra correctament en el online, de manera que si no estas just davant des d'on surt el projectil no impacta (sabem que el dispar es dirigeix directament cap al terra, de manera que explota al moment)
     - Si entres i surts de la part de selecció sense jugar, en algun cas pot crear imcompatibilitat d'instàncies de menú
-    - Les colisions d'alguns objectes dels escenaris que fan que moris no funcionen correctament (aigua, lava...)

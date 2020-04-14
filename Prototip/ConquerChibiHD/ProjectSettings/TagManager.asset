@@ -7,6 +7,7 @@ TagManager:
   - Projectile
   - Pinxo
   - menuPrefab
+  - ColliderDeath
   layers:
   - Default
   - TransparentFX

@@ -223,7 +223,7 @@ namespace Com.MyCompany.multiTest
             // We are only interested in Beamers
             // we should be using tags but for the sake of distribution, let's simply check by name.
             //Debug.LogWarning("hello" + SceneManager.GetActiveScene().name, this);
-            if (SceneManager.GetActiveScene().name.Equals("Lobby") || !other.name.Contains("Pinxo"))
+            if (SceneManager.GetActiveScene().name.Equals("Lobby") || !other.name.Contains("Pinxo") || !other.name.Contains("ColliderDeath"))
             {
                 return;
             }
@@ -273,6 +273,10 @@ namespace Com.MyCompany.multiTest
             {
                 Health -= 0.1f * Time.deltaTime;
                 //SpecialAttackMeter += 0.1f * Time.deltaTime;
+            }
+            if (other.gameObject.tag == "ColliderDeath")
+            {
+                Health -= 999.0f;
             }
         }
 
