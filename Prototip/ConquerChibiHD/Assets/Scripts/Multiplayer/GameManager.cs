@@ -303,7 +303,7 @@ namespace Com.MyCompany.multiTest
                 }
                 else
                 {
-                    PhotonNetwork.LoadLevel("Launcher");
+                    LeaveRoom();
                 }
                 
             }
