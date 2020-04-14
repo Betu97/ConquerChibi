@@ -8,5 +8,5 @@ A tenir en compte abans d'executar:
 
 Known bugs:
 
-    - El projectil del dispar no es mostra correctament en el online, de manera que si no estas just davant des d'on surt el projectil no impacta (sabem que el dispar es dirigeix directament cap al terra, de manera que explota al moment)
+    - El projectil del dispar no es mostra correctament en el online, de manera que si no estas just davant des d'on surt el projectil no impacta (sabem que el dispar es mou segons la camara de l'altre jugador)
     - Si entres i surts de la part de selecció sense jugar, en algun cas pot crear imcompatibilitat d'instàncies de menú
