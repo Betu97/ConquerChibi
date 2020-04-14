@@ -209,6 +209,86 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1.189241
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_AreaSize.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_AreaSize.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_Range
+      value: 22.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 22.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 5.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166384, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_UseBoundingSphereOverride
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166385, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 26.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166385, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_LightUnit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166385, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_ShapeWidth
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067890137783166385, guid: c54064bc00abaee468dc0116b08d6114,
+        type: 3}
+      propertyPath: m_AreaLightShape
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54064bc00abaee468dc0116b08d6114, type: 3}
 --- !u!4 &6125490378937514727 stripped

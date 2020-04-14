@@ -25,7 +25,7 @@ public class LeverScript : MonoBehaviour
 
     public void Start()
     {
-        crate = GameObject.Find("Plataforma");
+        crate = GameObject.Find("PlataformaNew");
         crate.GetComponent<Crate>().state = Crate.State.hide;
     }
 
