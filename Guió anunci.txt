@@ -1,0 +1,11 @@
+Dos segons per escenari -> rotació lenta de la càmera (posició fixa) per mostrar com son els escenaris
+
+A l'últim escenari, la càmera deixa de rotar y queda tot quiet durant mig segon -> Entra a pla un personatge mirant cap a la càmera i ataca en aquella direcció
+
+Logo del joc (sobre un skybox en moviment)
+
+Dos segons per personatge fent servir un o dos atacs en els seus respectius escenaris -> Fons de color i nom del personatge (https://i.ytimg.com/vi/WvbwZYV7W0Q/maxresdefault.jpg) (la frase descriptiva si voleu la posem i si no no)
+
+Dos personatges atacant-se (un sol atac) l'un contra l'altre a Paranoia etèria (el escenari "tipo Destino final").
+
+"Fundido a negro" -> Logo del joc a l'estil de la pantalla de selecció d'escenari
