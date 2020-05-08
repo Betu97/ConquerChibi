@@ -169,7 +169,7 @@ namespace Com.MyCompany.multiTest
                 }
 
                 if (Input.GetButton("Fire1") && CanFire){
-                    photonView.RPC("shoot", RpcTarget.All, FirePoint.transform.position, FirePoint.transform.rotation);
+                    photonView.RPC("shoot", RpcTarget.All, FirePoint.transform.position, this.gameObject.GetComponent<CameraWork>().transform.rotation);
                     StartCoroutine(StartCounting(Firerate));
                     CanFire = false;
                 }

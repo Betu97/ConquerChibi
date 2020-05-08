@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
- 
- public class CameraWork : MonoBehaviour {
- 
+
+public class CameraWork : MonoBehaviour {
+
     public float rotationSpeed = 1;
     public Transform Target, Player;
 
     public float height = 10f;
     public float distance = 20f;
     private Vector3 spacing;
- 
+
     public float mouseX, mouseY;
 
     bool sideViewFlag = false;
@@ -19,26 +19,30 @@ using System.Collections;
 
     // maintain a flag internally to reconnect if target is lost or camera is switched
     bool isFollowing;
- 
-    public void Start () {
+
+    public void Start() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         height = 3;
         distance = 6;
-        spacing = new Vector3 (0, height, -distance);
+        spacing = new Vector3(0, height, -distance);
         Debug.Log("setting initial spacing value: " + spacing + " with height = " + height + " and distance = " + -distance);
     }
-     
-    void LateUpdate(){
+
+    void LateUpdate() {
         // The transform target may not destroy on level load,
         // so we need to cover corner cases where the Main Camera is different everytime we load a new scene, and reconnect when that happens
-        if (cameraTransform == null && isFollowing){
+        if (cameraTransform == null && isFollowing) {
             OnStartFollowing();
         }
         // only follow is explicitly declared
-        if (isFollowing){
+        if (isFollowing) {
             moveCamera();
         }
+    }
+
+    public Transform CameraTransform{
+        get{ return cameraTransform; }
     }
 
     void moveCamera(){
