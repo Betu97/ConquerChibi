@@ -12,7 +12,7 @@ public class ProjectileMove : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-        currentTransform = Camera.main.transform.forward;
+        currentTransform = transform.forward;
         Debug.Log("currentTransform pre minus: " + currentTransform);
         currentTransform.y = currentTransform.y - (float) 0.17;
         Debug.Log("currentTransform post minus: " + currentTransform);
