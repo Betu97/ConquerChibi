@@ -4,8 +4,6 @@ A l'últim escenari, la càmera deixa de rotar y queda tot quiet durant mig sego
 
 Logo del joc (sobre un skybox en moviment)
 
-Dos segons per personatge fent servir un o dos atacs en els seus respectius escenaris -> Fons de color i nom del personatge (https://i.ytimg.com/vi/WvbwZYV7W0Q/maxresdefault.jpg) (la frase descriptiva si voleu la posem i si no no)
+Diferents gameplays del joc amb els personatges lluitant entre sí en diferents escenaris
 
-Dos personatges atacant-se (un sol atac) l'un contra l'altre a Paranoia etèria (el escenari "tipo Destino final").
-
-"Fundido a negro" -> Logo del joc a l'estil de la pantalla de selecció d'escenari
+Escena final amb tots els personatges -> Logo a sobre
