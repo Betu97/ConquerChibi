@@ -45,13 +45,13 @@ namespace Com.MyCompany.multiTest
                 {
                     int choosenHero = PlayerPrefs.GetInt("hero", 1);
                     Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
-                    if(choosenHero == 1){
+                    if(choosenHero == 2){
                         // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                        PhotonNetwork.Instantiate(this.playerPrefab1.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
-                    }
-                    else if(choosenHero == 2)
-                    {
                         PhotonNetwork.Instantiate(this.playerPrefab2.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+                    }
+                    else
+                    {
+                        PhotonNetwork.Instantiate(this.playerPrefab1.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
                     }                  
 
                     

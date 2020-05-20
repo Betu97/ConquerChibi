@@ -30,11 +30,12 @@ namespace Com.MyCompany.multiTest
         private int indexPlayer;
         private bool votedPlayer = false;
         private bool pressedPlayer = false;
-        private int lastIndexPlayer = 0;
+        private int lastIndexPlayer = 1;
         private Text timerPlayer;
         private bool arenaVoting = false;
         private GameObject PlayerControlPanel;
         private GameObject ArenaControlPanel;
+        private Color checkedColor;
 
         #endregion
 
@@ -94,6 +95,8 @@ namespace Com.MyCompany.multiTest
             // #Critical
             // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
             DontDestroyOnLoad(this.gameObject);
+            checkedColor = new Color();
+            ColorUtility.TryParseHtmlString("#CF9659", out checkedColor);
 
             try
             {
@@ -165,21 +168,13 @@ namespace Com.MyCompany.multiTest
                 {
                     try
                     {
-                        //si ja ha votat anteriorment, retirarem el vot anterior per fer el canvi
-                        if (votedPlayer)
-                        {
-                            int punctuationPlayer = int.Parse(GameObject.Find("Player" + lastIndexPlayer + "Text").GetComponent<Text>().text);
-                            punctuationPlayer--;
-                            GameObject.Find("Player" + lastIndexPlayer + "Text").GetComponent<Text>().text = punctuationPlayer.ToString();
-                        }
+                        GameObject.Find("Player" + lastIndexPlayer).GetComponent<Image>().color = Color.white;
                         //ficarem a true el voted i afagirem la nova votació
                         votedPlayer = true;
                         lastIndexPlayer = indexPlayer;
-                        Debug.Log("Adding 1 vote to " + indexPlayer + " Player");
-                        int punctuationPlayermore = int.Parse(GameObject.Find("Player" + indexPlayer + "Text").GetComponent<Text>().text);
-                        punctuationPlayermore++;
-                        GameObject.Find("Player" + indexPlayer + "Text").GetComponent<Text>().text = punctuationPlayermore.ToString();
-                        pressedPlayer = false;
+                        Debug.Log("Adding vote to " + indexPlayer + " Player");
+                        GameObject.Find("Player" + indexPlayer).GetComponent<Image>().color = checkedColor;
+                         pressedPlayer = false;
 
                     }
                     catch
