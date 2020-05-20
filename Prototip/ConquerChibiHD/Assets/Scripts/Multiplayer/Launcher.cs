@@ -81,6 +81,7 @@ namespace Com.MyCompany.multiTest
             {
                 // #Critical, we must first and foremost connect to Photon Online Server.
                 PhotonNetwork.GameVersion = gameVersion;
+                PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = "eu";
                 PhotonNetwork.ConnectUsingSettings();
             }
         }
