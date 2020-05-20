@@ -1747,6 +1747,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6974143998982298798, guid: 9aa2b26f4a8fab049a0d99ba228366d8,
         type: 3}
+    - target: {fileID: 370372716391335054, guid: 70fcfda3d4e497c4382001c0a95cf610,
+        type: 3}
+      propertyPath: playerPrefab1
+      value: 
+      objectReference: {fileID: 6974143998982298798, guid: 9aa2b26f4a8fab049a0d99ba228366d8,
+        type: 3}
+    - target: {fileID: 370372716391335054, guid: 70fcfda3d4e497c4382001c0a95cf610,
+        type: 3}
+      propertyPath: playerPrefab2
+      value: 
+      objectReference: {fileID: 2431183426213339172, guid: 46c36d4dcbf33114c92147e3d076024f,
+        type: 3}
     - target: {fileID: 2730489807156331040, guid: 70fcfda3d4e497c4382001c0a95cf610,
         type: 3}
       propertyPath: m_Name

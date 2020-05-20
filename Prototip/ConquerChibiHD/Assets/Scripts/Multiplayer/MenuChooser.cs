@@ -26,6 +26,7 @@ namespace Com.MyCompany.multiTest
         private bool pressed = false;
         private int lastIndex = 0;
         private Text timer;
+        [SerializeField]
         private int indexPlayer;
         private bool votedPlayer = false;
         private bool pressedPlayer = false;
@@ -36,6 +37,11 @@ namespace Com.MyCompany.multiTest
         private GameObject ArenaControlPanel;
 
         #endregion
+
+        public int getIndexPlayer
+        {
+            get{ return indexPlayer; }
+        }
 
         #region Private Methods
 #if UNITY_5_4_OR_NEWER

@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLeft: 20
+  indexPlayer: 0
 --- !u!114 &7580093742553501847
 MonoBehaviour:
   m_ObjectHideFlags: 0

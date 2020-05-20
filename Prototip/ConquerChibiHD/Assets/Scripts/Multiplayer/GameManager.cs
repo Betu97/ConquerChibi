@@ -19,7 +19,8 @@ namespace Com.MyCompany.multiTest
     public class GameManager : MonoBehaviourPunCallbacks
     {
         public static GameManager Instance;
-        public GameObject playerPrefab;
+        public GameObject playerPrefab1;
+        public GameObject playerPrefab2;
         public GameObject menuPrefab;
         public Canvas canvas;
         public List<GameObject> vfx = new List<GameObject>();
@@ -42,9 +43,18 @@ namespace Com.MyCompany.multiTest
                 Instance = this;
                 if (PlayerManager.LocalPlayerInstance == null)
                 {
+                    int choosenHero = PlayerPrefs.GetInt("hero", 1);
                     Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
-                    // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+                    if(choosenHero == 1){
+                        // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
+                        PhotonNetwork.Instantiate(this.playerPrefab1.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+                    }
+                    else if(choosenHero == 2)
+                    {
+                        PhotonNetwork.Instantiate(this.playerPrefab2.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+                    }                  
+
+                    
                 }
                 else
                 {
@@ -235,6 +245,7 @@ namespace Com.MyCompany.multiTest
         {
             try
             {
+                PlayerPrefs.SetInt("hero", menuVotation.GetComponent<MenuChooser>().getIndexPlayer);
                 int[] punctuation = new int[6];
                 punctuation[0] = int.Parse(GameObject.Find("Arena1Text").GetComponent<Text>().text);
                 punctuation[1] = int.Parse(GameObject.Find("Arena2Text").GetComponent<Text>().text);
