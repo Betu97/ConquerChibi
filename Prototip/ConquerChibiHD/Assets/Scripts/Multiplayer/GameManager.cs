@@ -23,7 +23,7 @@ namespace Com.MyCompany.multiTest
         public GameObject menuPrefab;
         public Canvas canvas;
         public List<GameObject> vfx = new List<GameObject>();
-        public float menuTime = 40.0f;
+        public float menuTime = 20.0f;
 
         Boolean menu;
         private GameObject effectToSpawn;
@@ -73,7 +73,7 @@ namespace Com.MyCompany.multiTest
         {
             if (Input.GetKeyDown("escape") && InGame())
             {
-                if(menu == false && canvas != null)
+                if(menu == false)
                 {
                     canvas.gameObject.SetActive(true);
                     menu = true;
@@ -193,25 +193,6 @@ namespace Com.MyCompany.multiTest
                 else
                 {
                     menuVotation.GetComponent<MenuChooser>().voteArena(index);
-                }
-            }
-            catch
-            {
-                Debug.LogError("Ha habido un error con el prefab del menu");
-            }
-        }
-
-        public void VotePlayer(int index)
-        {
-            try
-            {
-                if (menuVotation == null)
-                {
-                    Debug.Log("No l'he trobat");
-                }
-                else
-                {
-                    menuVotation.GetComponent<MenuChooser>().votePlayer(index);
                 }
             }
             catch
