@@ -11,7 +11,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -6868892477458170488}
+  - {fileID: -6805073451429465709}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -37,7 +37,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 58ab0b8bb2c99e64c921c6702107b4a4,
+    m_Motion: {fileID: -203655887218126122, guid: 15bd14527e3580145b7f0a1f9cd47a1b,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 1, y: 0}
@@ -46,7 +46,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 58ab0b8bb2c99e64c921c6702107b4a4,
+    m_Motion: {fileID: -203655887218126122, guid: 776b884e295435c44a85454b97fbb994,
       type: 3}
     m_Threshold: 0.25
     m_Position: {x: 0, y: 1}
@@ -64,7 +64,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 58ab0b8bb2c99e64c921c6702107b4a4,
+    m_Motion: {fileID: -203655887218126122, guid: e32280b7c6eaebd48a652058eb0c6dea,
       type: 3}
     m_Threshold: 0.75
     m_Position: {x: -1, y: 0}
@@ -73,7 +73,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 58ab0b8bb2c99e64c921c6702107b4a4,
+    m_Motion: {fileID: -203655887218126122, guid: 1697848248688d84085754c30a04f3e0,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: -1}
@@ -88,17 +88,14 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 1
---- !u!1101 &-6868892477458170488
+--- !u!1101 &-6805073451429465709
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Jump
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8538281646428545934}
   m_Solo: 0

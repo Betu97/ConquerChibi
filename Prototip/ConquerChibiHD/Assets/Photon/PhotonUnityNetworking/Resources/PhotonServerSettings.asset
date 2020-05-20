@@ -29,5 +29,5 @@ MonoBehaviour:
   RunInBackground: 1
   StartInOfflineMode: 0
   RpcList: []
-  DisableAutoOpenWizard: 1
+  DisableAutoOpenWizard: 0
   ShowSettings: 0
