@@ -28,6 +28,7 @@ namespace Com.MyCompany.multiTest
 
         Boolean menu;
         private GameObject effectToSpawn;
+        private GameObject effectToSpawnBB;
         private GameObject menuVotation;
         bool startedGame;
 
@@ -39,6 +40,7 @@ namespace Com.MyCompany.multiTest
                 Cursor.visible = false;
                 menu = false;
                 effectToSpawn = vfx[0];
+                effectToSpawnBB = vfx[1];
 
                 Instance = this;
                 if (PlayerManager.LocalPlayerInstance == null)
@@ -303,12 +305,19 @@ namespace Com.MyCompany.multiTest
             }
         }
 
-        public void SpawnVFX(Vector3 from, Quaternion to)
+        public void SpawnVFX(Vector3 from, Quaternion to, int effect)
         {
             GameObject vfx;
-
-            vfx = Instantiate(effectToSpawn, from, Quaternion.identity);
-            vfx.transform.localRotation = to;
+            if(effect == 2) {
+                vfx = Instantiate(effectToSpawnBB, from, Quaternion.identity);
+                vfx.transform.localRotation = to;
+            }
+            else
+            {
+                vfx = Instantiate(effectToSpawn, from, Quaternion.identity);
+                vfx.transform.localRotation = to;
+            }
+            
         }
     
 

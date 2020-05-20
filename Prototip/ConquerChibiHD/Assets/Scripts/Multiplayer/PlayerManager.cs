@@ -169,7 +169,7 @@ namespace Com.MyCompany.multiTest
                 }
 
                 if (Input.GetButton("Fire1") && CanFire){
-                    photonView.RPC("shoot", RpcTarget.All, FirePoint.transform.position, this.gameObject.GetComponent<CameraWork>().CameraTransform.rotation);
+                    photonView.RPC("shoot", RpcTarget.All, FirePoint.transform.position, this.gameObject.GetComponent<CameraWork>().CameraTransform.rotation, PlayerPrefs.GetInt("hero", 1));
                     StartCoroutine(StartCounting(Firerate));
                     CanFire = false;
                 }
@@ -196,10 +196,10 @@ namespace Com.MyCompany.multiTest
         }
 
         [PunRPC]
-        public void shoot(Vector3 pos, Quaternion angle)
+        public void shoot(Vector3 pos, Quaternion angle, int vfx)
         {
             //GameManager.Instance.SpawnVFX(FirePoint.transform.position, FirePoint.transform.rotation);
-            GameManager.Instance.SpawnVFX(pos, angle);
+            GameManager.Instance.SpawnVFX(pos, angle, vfx);
             Attack1.Play();
         }
 
