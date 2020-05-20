@@ -26,6 +26,14 @@ namespace Com.MyCompany.multiTest
         private bool pressed = false;
         private int lastIndex = 0;
         private Text timer;
+        private int indexPlayer;
+        private bool votedPlayer = false;
+        private bool pressedPlayer = false;
+        private int lastIndexPlayer = 0;
+        private Text timerPlayer;
+        private bool arenaVoting = false;
+        private GameObject PlayerControlPanel;
+        private GameObject ArenaControlPanel;
 
         #endregion
 
@@ -84,10 +92,14 @@ namespace Com.MyCompany.multiTest
             try
             {
                 timer = GameObject.Find("Counter").GetComponent<Text>();
+                timerPlayer = GameObject.Find("CounterPlayer").GetComponent<Text>();
+                ArenaControlPanel = GameObject.Find("ArenaControlPanel");
+                ArenaControlPanel.SetActive(false);
+                PlayerControlPanel = GameObject.Find("PlayerControlPanel");
             }
             catch
             {
-               
+                //Debug.LogError("error en inicialitzar en el MenuChooser");
             }
         }
 
@@ -110,23 +122,65 @@ namespace Com.MyCompany.multiTest
         void Update()
         {
             try
-            {
+            {                
                 timeLeft -= Time.deltaTime;
-                timer.text = Mathf.Round(timeLeft).ToString();
-                if (timeLeft < 0)
+                if (arenaVoting)
                 {
-                    timer.text = "0";
+                    timer.text = Mathf.Round(timeLeft).ToString();
+                    if (timeLeft < 0)
+                    {
+                        timer.text = "0";
+                    }
+                }
+                else
+                {
+                    timerPlayer.text = Mathf.Round(timeLeft).ToString();
+                    Debug.Log("Canvio text");
+                    if (timeLeft < 0)
+                    {
+                        Debug.Log("Entro al time 0");
+                        timerPlayer.text = "0";
+                        arenaVoting = true;
+                        ArenaControlPanel.SetActive(true);
+                        PlayerControlPanel.SetActive(false);
+                        timeLeft = 20.0f;
+                    }
                 }
             }
             catch
             {
-                Debug.LogError("Error en agafar el text de timer");
+                //Debug.LogError("Error en agafar el text de timer");
             }
 
             // we only process Inputs if we are the local player
             if (photonView.IsMine)
             {
+                if (pressedPlayer == true)
+                {
+                    try
+                    {
+                        //si ja ha votat anteriorment, retirarem el vot anterior per fer el canvi
+                        if (votedPlayer)
+                        {
+                            int punctuationPlayer = int.Parse(GameObject.Find("Player" + lastIndexPlayer + "Text").GetComponent<Text>().text);
+                            punctuationPlayer--;
+                            GameObject.Find("Player" + lastIndexPlayer + "Text").GetComponent<Text>().text = punctuationPlayer.ToString();
+                        }
+                        //ficarem a true el voted i afagirem la nova votació
+                        votedPlayer = true;
+                        lastIndexPlayer = indexPlayer;
+                        Debug.Log("Adding 1 vote to " + indexPlayer + " Player");
+                        int punctuationPlayermore = int.Parse(GameObject.Find("Player" + indexPlayer + "Text").GetComponent<Text>().text);
+                        punctuationPlayermore++;
+                        GameObject.Find("Player" + indexPlayer + "Text").GetComponent<Text>().text = punctuationPlayermore.ToString();
+                        pressedPlayer = false;
 
+                    }
+                    catch
+                    {
+                        Debug.Log("Error Mostrando la interaccion");
+                    }
+                }
                 if (pressed == true)
                 {
                     try
@@ -134,7 +188,7 @@ namespace Com.MyCompany.multiTest
                         //si ja ha votat anteriorment, retirarem el vot anterior per fer el canvi
                         if (voted)
                         {
-                            photonView.RPC("unvote", RpcTarget.All, lastIndex);
+                            photonView.RPC("unvote", RpcTarget.All, lastIndex);                            
                         }
                         //ficarem a true el voted i afagirem la nova votació
                         voted = true;
@@ -177,6 +231,12 @@ namespace Com.MyCompany.multiTest
         {
             indexArena = index;
             pressed = true;
+        }
+
+        public void votePlayer(int index)
+        {
+            indexPlayer = index;
+            pressedPlayer = true;
         }
 
 

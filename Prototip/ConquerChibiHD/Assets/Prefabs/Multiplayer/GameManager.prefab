@@ -48,4 +48,6 @@ MonoBehaviour:
   menuPrefab: {fileID: 5241824260699029293, guid: 6ff08018c19f4de47b3dadcda8472728,
     type: 3}
   canvas: {fileID: 0}
-  vfx: []
+  vfx:
+  - {fileID: 4478958200679818282, guid: 45784168e67566a4ba52838ea361d402, type: 3}
+  menuTime: 40
