@@ -79,6 +79,7 @@ En un futur, per balancejar el moviment de cada personatge es pot fer un switch 
 			direction.y = 0.0f;
 			transform.position += Vector3.Normalize(direction)/slower;
         }else if(Input.GetKey(KeyCode.W)){
+            Debug.Log("caca");
             Vector3 direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
 			direction = Camera.main.transform.TransformDirection(direction);
 			direction.y = 0.0f;
